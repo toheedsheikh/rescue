@@ -1,3 +1,5 @@
-image_filename,latitude,longitude,description,status
-a.jpeg,79.0,90.0,string,not_resolved
-b.jpeg,90.0,33.0,uygutfutftkgj,not_resolved
+id,image_filename,latitude,longitude,location,description,status
+1,a.jpeg,0.0,0.0,string,string,not_resolved
+2,a.jpeg,0.0,0.0,string,string,not_resolved
+3,a.jpeg,0.0,1.0,string,string,resolved
+4,b.jpeg,29.0,100.0,string,string,not_resolved

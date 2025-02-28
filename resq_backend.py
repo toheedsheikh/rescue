@@ -28,7 +28,7 @@ class SignUpRequest(BaseModel):
     password: str
     mpin: str
 
-@app.post("/signup")
+@app.post("/signup1")
 async def sign_up_user(request: SignUpRequest):
     try:
         hashed_password = hash_password(request.password)

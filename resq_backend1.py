@@ -82,7 +82,7 @@ def upload_report(
         raise HTTPException(status_code=500, detail=f"Failed to upload report: {str(e)}")
 
 # Endpoint: GET /user/reports/
-@app.get("/user/reports/", response_model=List[Report])
+@app.get("/user/get_reports/", response_model=List[Report])
 def get_reports():
     try:
         reports = []
