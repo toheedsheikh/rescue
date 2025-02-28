@@ -89,7 +89,8 @@ def get_reports():
         with open(CSV_FILE, 'r') as file:
             reader = csv.DictReader(file)
             for row in reader:
-                reports.append(Report(**row))
+                if row['status'] != 'resolved':
+                    reports.append(Report(**row))
         return reports
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to fetch reports: {str(e)}")
